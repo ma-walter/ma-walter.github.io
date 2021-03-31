@@ -1,0 +1,52 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="shortcut icon" href="{{site.baseurl}}/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="{{site.baseurl}}/images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="{{ "/css/foundation.css " | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/style.css " | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/fontello.css " | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    {% if page.custom_css %}
+        {% for stylesheet in page.custom_css %}
+            <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
+        {% endfor %}
+    {% endif %}
+    <script src="{{ "/javascripts/libs.js " | prepend: site.baseurl }}" type="text/javascript"></script>
+    <script>
+        // terrificjs bootstrap
+        (function($) {
+            $(document).ready(function() {
+                var $page = $('body');
+                var config = {
+                    dependencyPath: {
+                        plugin: 'javascripts/'
+                    }
+                }
+                var application = new Tc.Application($page, config);
+                application.registerModules();
+                application.start();
+            });
+        })(Tc.$);
+
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Anton|Raleway:400,700,300" media="screen" rel="stylesheet" type="text/css" />
+    <script src="{{ "/javascripts/masonry.pkgd.js " | prepend: site.baseurl }}" type="text/javascript"></script>
+    <script src="{{ "/javascripts/imagesloaded.pkgd.min.js " | prepend: site.baseurl }}" type="text/javascript"></script>
+    <script src="{{ "/javascripts/slick.min.js " | prepend: site.baseurl }}" type="text/javascript"></script>
+    <script src="{{ "/javascripts/json2.js " | prepend: site.baseurl }}" type="text/javascript"></script>
+    {% if page.custom_js %}
+        {% for js_file in page.custom_js %}
+            <script src='/javascripts/{{ js_file }}.js' type="text/javascript"></script>
+        {% endfor %}
+    {% endif %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend: site.url }}" />
+</head>
