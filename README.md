@@ -1,1 +1,0 @@
-# ma-walter.github.io
