@@ -1,0 +1,84 @@
+%!Adobe-FontList 1.20
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/catarinabatista/ownCloud/Inno.space - Design Factory Mannheim/+visual identity_files/+00 New Identity/Social Media/01- Hey You Ordner/Document fonts/AdobeFnt21.lst
+FileLength:37
+FileModTime:616672307
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:/Users/catarinabatista/ownCloud/Inno.space - Design Factory Mannheim/+visual identity_files/+00 New Identity/Social Media/01- Hey You Ordner/Document fonts/MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:218640
+FileModTime:470295839
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Ubuntu-Bold
+FamilyName:Ubuntu
+StyleName:Bold
+MenuName:Ubuntu
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Ubuntu Bold
+WritingScript:Roman
+OutlineFileName:/Users/catarinabatista/ownCloud/Inno.space - Design Factory Mannheim/+visual identity_files/+00 New Identity/Social Media/01- Hey You Ordner/Document fonts/Ubuntu-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:269584
+FileModTime:314060400
+NameArray:0,Win,1,Ubuntu
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Ubuntu-Medium
+FamilyName:Ubuntu
+StyleName:Medium
+MenuName:Ubuntu Light
+StyleBits:2
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Ubuntu Medium
+WritingScript:Roman
+OutlineFileName:/Users/catarinabatista/ownCloud/Inno.space - Design Factory Mannheim/+visual identity_files/+00 New Identity/Social Media/01- Hey You Ordner/Document fonts/Ubuntu-Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:341324
+FileModTime:314056800
+NameArray:0,Mac,18,Ubuntu Medium
+NameArray:0,Mac,4,Ubuntu Medium
+NameArray:0,Win,1,Ubuntu Light
+NameArray:0,Win,16,Ubuntu
+%EndFont
+

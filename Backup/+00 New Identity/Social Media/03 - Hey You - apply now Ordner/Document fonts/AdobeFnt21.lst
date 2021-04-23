@@ -1,0 +1,56 @@
+%!Adobe-FontList 1.20
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/diehlu/Documents/inno-space/Social Media/Hey You 02 Ordner/Document fonts/AdobeFnt21.lst
+FileLength:1211
+FileModTime:616319143
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Ubuntu
+FamilyName:Ubuntu
+StyleName:Regular
+MenuName:Ubuntu
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Ubuntu
+WritingScript:Roman
+OutlineFileName:/Users/diehlu/Documents/inno-space/Social Media/Hey You 02 Ordner/Document fonts/Ubuntu-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:353824
+FileModTime:314056800
+NameArray:0,Mac,4,Ubuntu
+NameArray:0,Win,1,Ubuntu
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Ubuntu-Bold
+FamilyName:Ubuntu
+StyleName:Bold
+MenuName:Ubuntu
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Ubuntu Bold
+WritingScript:Roman
+OutlineFileName:/Users/diehlu/Documents/inno-space/Social Media/Hey You 02 Ordner/Document fonts/Ubuntu-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:269584
+FileModTime:314060400
+NameArray:0,Win,1,Ubuntu
+%EndFont
+

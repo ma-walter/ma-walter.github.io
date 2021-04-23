@@ -1,0 +1,346 @@
+---
+layout: default
+section_id: home
+slides:
+  - bg: images/@slider/Landing_1.3.jpg
+    small_title:
+      klass: bottom-to-top
+      text: Creating impact
+    title:
+      klass: bottom-to-top
+      text: through Co-Innovation
+ #buttons:
+  # klass: bottom-to-top
+  # items: 
+  #- text: Events
+  # link_to: https://inno-space.events.idloom.com/gdip
+  - bg: images/@slider/Landing_1.2.jpg
+    klass:
+    small_title:
+      klass: no-animation
+      text: Creating impact
+    title:
+      klass: no-animation
+      text: through Co-Innovation
+    #buttons:
+     # klass:
+      #items:
+       # - klass: boxed
+        #  text:
+         # link_to:
+        #- text:
+         # link_to:
+  - bg: images/@slider/Landing_1.4.jpg
+    small_title:
+      klass: no-animation
+      text: Creating impact
+    title:
+      klass: no-animation
+      text: through Co-Innovation
+   # buttons:
+    #  klass:
+     # items:
+      #  - text:
+       #   link_to:
+  - bg: images/@slider/Landing_1.5.jpg
+    small_title:
+      klass: no-animation
+      text: Creating impact
+    title:
+      klass: no-animation
+      text: through Co-Innovation
+   # buttons:
+    #  klass:
+     # items:
+      #  - text:
+       #   link_to:
+
+
+
+services:
+  - icon: fas fa-user-graduate
+    title: Students
+    desc: Currently, we host 3 different programs at inno.space. Our offer suits both Master and Bachelor students and, although being slightly different, all our programs are multidisciplinary, international and focused on human-centered innovation.
+  - icon: fas fa-industry
+    title: Industry
+    desc: Besides our long term projects, we also provide short and fast paced workshops to industry partners to guarantee that your company gets in the Design Thinking mindset, facilitating the implementation of this method inside the company and driving innovation faster and more effectively.
+  - icon: fas fa-stopwatch
+    title: Short term courses
+    desc: "Alongside our main programs, many other events and courses happen at inno.space!
+    We are delighted to offer shorter programs that rely on making and, especially, having fun!
+    We conduct courses on how to operate our laser cutter machine, how to prototype in various mediums, the Challenge Based Making course and Rat Relay."
+
+
+milestones:
+  - icon: fas fa-user-graduate
+    from: 0
+    to: 52
+    title: students
+  - icon: fas fa-book
+    from: 0
+    to: 5
+    title: programs
+  - icon: fas fa-hands-helping
+    from: 0
+    to: 8
+    title: academic partners
+  - icon: fas fa-industry
+    from: 0
+    to: 10
+    title: corporate sponsors
+
+testimonials:
+  - quote: You learn how what you learn can fit to the things you need. You need to make the connections. (…) The main learning was how far you can get from a simple sketch … it’s really impressive what you can achieve in such a few months.
+    author: Mariya Bolotnikova, Bachelors in Communication Design – CBI A3 2019/2020
+  - quote: It’s a different workflow and people bring different perspectives. It showed how this collaborative work can lead to great results. You have to put a lot of your own thoughts, you are open to try new things, which is great. (…) You learn what you are really capable of.
+    author: Sarah Lottner, Masters in Medical Engineering – CBI A3 2019/2020
+  - quote: I discovered new ways of doing innovation, it was the first time you’re not just learning from slides but you actually are doing the process. (…) I enjoyed the freedom to decide what we are going to do and how we are going to that and it’s completely different. I would say it’s an actual learning approach. (…) If you’re getting the right question at the right time, you’re exercising what you learn, it’s action-based learning.
+    author: Markus Knödler, Masters in Business Engineering – DTP 2018/2019
+  - quote: It was a big responsibility, a lot of work and a demanding challenge but a great chance to grow above myself! The freedom of following our own ideas paired with the international and interdisciplinary setup was inspiring. The project always felt full of purpose and meaning. The lectures I attended, the friends I made and the skills I acquired certainly made this a chance of a lifetime.
+    author: Christoph Bruthscher, Master in Computer Science - DTP 2016/2017
+  - quote: In the DTP Project I learned to have an open mind to all ideas. Most important I experienced the need to try these ideas out and not give up on them too early. Considering this we accelerated ideation and came up with unexpected new ideas. I brought this mindset to my life&#58; don’t judge ideas as bad or good too early, build on them and test them to create the best experience.
+    author: Emylie Pereira, Master in Computer Science - DTP 2015/2016
+  - quote: A lot of the things I learned will pay off in my future. It was a very exhausting time but also it was the masters course program that I learned the most in. A really deep and intense learning experience!
+    author: Max Becker, Master in Computer Science - DTP 2016/2017
+  
+
+---
+
+<!-- Header -->
+<div class='mod modDefaultSlider'>
+  <div class='sequence' data-autostop='off' data-timeout='3500' >
+    <a class='sequence-prev' href='javascript:void(0);'>
+      <span></span>
+    </a>
+    <a class='sequence-next' href='javascript:void(0);'>
+      <span></span>
+    </a>
+    <ul class='sequence-pagination'>
+      {% for slide in page.slides %}
+        {% if forloop.first %}
+          {% assign class = 'current' %}
+        {% else %}
+          {% assign class = '' %}
+        {% endif %}
+        <li class="{{class}}"></li>
+      {% endfor %}
+    </ul>
+    <ul class='sequence-canvas'>
+      {% for slide in page.slides %}
+        {% if forloop.first %}
+          {% assign style = 'static' %}
+        {% else %}
+          {% assign style = '' %}
+        {% endif %}
+
+        <li class='frame {{style}} {{ slide.klass }}'>
+          <div class='bg' style='background-image: url({{ slide.bg}});'></div>
+          <div class='title {{ slide.title.klass }}'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <h2>{{ slide.small_title.text }}</h2>
+              </div>
+            </div>
+          </div>
+          <div class='title {{ slide.title.klass }}'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <h2>{{ slide.title.text }}</h2>
+              </div>
+            </div>
+          </div>
+          <div class="buttons-wrapper bottom-to-top">
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="two spacing"></div>
+                
+                  <a class="button" target="_blank" rel="noopener noreferrer" href="https://inno-space.events.idloom.com/inno-event">Our Next Event</a>
+                
+              </div>
+            </div>
+          </div>
+          <!--
+          <div class='buttons-wrapper {{ slide.buttons.klass }}'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <div class='two spacing'></div>
+                {% for button in slide.buttons.items %}
+                  <a class='button {{ button.klass }}' href='{{ button.link_to }}'>{{ button.text }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          -->
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<!-- Slogan -->
+<div class="full parallax" style="text-align: center;background-image: url(images/slogan.jpg); color: #fff;">
+    <div class="spacing"></div>
+    <div class="row">
+
+        <div class="large-12">
+            <p class="slogan">Where passion-based learning meets real-world problems to generate human-centred innovation and true impact.</p>
+
+        </div>
+    </div>
+    <div class="three spacing"></div>
+</div>
+
+<!--
+<div class="full" style="background: #f5f5f5;">
+  <div class="row">
+    <div class="large-12 columns">
+      {% include section-header.html title="Our works" %}
+      <div class="spacing"></div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.
+      </p>
+      <div class="three spacing"></div>
+    </div>
+  </div>
+
+  <div class="mod modGallery">
+    <ul class="gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+      {% for work in page.works %}
+        <li class="{{ work.klass }}">
+          <a href='{{ work.link_to }}'>
+            <img alt="" src="{{ work.image }}" />
+            <div class='overlay'>
+              <div class='thumb-info'>
+                <h3>{{ work.title }}</h3>
+                <p>{{ work.desc }}</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+-->
+
+<!-- Service -->
+<div class='full' style="background: #f5f5f5;">
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Our offer for students and companies" %}
+      <div class='spacing'></div>
+      <p>
+        inno.space - Design Factory Mannheim provides the environment for passion-based learning, co- creation across disciplines and cultures and industrial cooperation. <br/>
+       It facilitates teamwork, making, prototyping, and digital fabrication in an inspiring and open atmosphere, fostering the right conditions for solving complex real-world problems.
+      </p>
+      <div class='three spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <div style='padding:56.25% 0 0 0;position:relative;'>
+        <iframe src="https://player.vimeo.com/video/448552394" style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+      <div class='three spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class="three spacing"></div>
+    {% for service in page.services %}
+      <div class='medium-4 columns'>
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple'>
+            <i class='{{service.icon}}'></i>
+            <h3>{{service.title}}</h3>
+            <p>{{service.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class='spacing'></div>
+</div>
+
+<!-- Numbers -->
+<div class='full parallax' style='background-image: url(images/teams-bg.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="inno.space so far" color="#fff" %}
+      <div class='spacing'></div>
+      <p class='centered-text' style='color: #ccc;'>
+
+      </p>
+      <div class='two spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    {% for milestone in page.milestones %}
+      <div class='medium-3 large-3 columns'>
+        <div class='mod modMilestone'>
+          <i class='{{milestone.icon}}'></i>
+          <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'>&nbsp;</strong>
+          <span>{{milestone.title}}</span>
+          <div class='four spacing'></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class='two spacing'></div>
+</div>
+
+<!-- Quotes -->
+<div class='full parallax' style="background: #f5f5f5;">
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p class='centered-text'>
+        <i class='fa fa-quote-left' style='color: #ff6000; font-size: 36px;'></i>
+      </p>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="What students say" %}
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modTestimonials'>
+        <div class='row'>
+          <div class='small-12 columns'>
+            <div class='items centered-text'>
+              {% for testimonial in page.testimonials %}
+                <div class='item'>
+                  <p class='quote'>"{{testimonial.quote}}"</p>
+                  <p class='author'>- {{testimonial.author}}</p>
+                  <div class='two spacing'></div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class='spacing'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Partners -->
+{% include our-customers.html %}
+
+<!-- Call to action -->
+<div class='full no-padding' style='background: #ff6000; text-align: center;'>
+  <div class='two spacing'></div>
+  <div class='mod modCallToAction'>
+    <div class='row'>
+      <div class='medium-8 large-8 columns'>
+        <p style="color:#ffffff;"><b>Sounds good? Then get in touch with us!</b></p>
+      </div>
+      <div class='medium-4 large-4 columns'>
+        <a class='button' href='contact.html'>Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>

@@ -1,0 +1,303 @@
+---
+layout: default
+title: About
+section_id: about
+
+value_left:
+  - icon: far fa-lightbulb
+    title: Empowerment
+    desc: We empower students to be responsible for their own education and go beyond what they think is possible.
+  - icon: fas fa-user-circle
+    title: People
+    desc: We put people in the center of everything.
+  - icon: fas fa-hammer
+    title: Hands on
+    desc: We encourage teams to learn by doing and stop overthinking!
+
+value_right:
+  - icon: fas fa-exchange-alt
+    title: Impact
+    desc: We go for real impact.
+  - icon: fas fa-hands
+    title: Passion
+    desc: We are passionated about our work.
+  - icon: far fa-grin-tongue-wink
+    title: Fun
+    desc: We believe having fun is key to unleash creativity and drive innovation.
+
+works:
+  - image: images/@room/Room_5.1.jpg
+    title:
+    link_to:
+    klass:
+    desc:
+  - image: images/@room/Room_5.2.jpg
+    title:
+    link_to:
+    klass:
+    desc:
+  - image: images/@room/Room_5.3.jpg
+    title:
+    link_to:
+    klass:
+    desc:
+# -- For the panorama viewer --
+custom_css: pannellum
+custom_js: pannellum
+rooms:
+    kitchen:
+        text: Kitchen and teaching team area
+        image: kitchen.jpg
+        start: 130
+        connections:
+            -
+                horizontal: 175
+                linksTo: lasercutter
+            -
+                horizontal: -140
+                linksTo: workarea
+            -
+                horizontal: 90
+                linksTo: teamsarea
+    lasercutter:
+        text: Lasercutter room
+        image: lasercutter.jpg
+        start: 40
+        connections:
+            -
+                horizontal: -170
+                linksTo: workarea
+            -
+                horizontal: -120
+                linksTo: kitchen
+        pointsOfInterest:
+            -
+                horizontal: -147
+                vertical: -10
+                text: Ultimaker² Extended 3D printer
+                link: https://ultimaker.com/3d-printers/ultimaker-2-plus
+            -
+                horizontal: 70
+                vertical: -25
+                text: Epilog HELIX lasercutter
+                link: https://www.epiloglaser.co.uk/laser-machines/mini-helix-engraver-cutter/
+    workarea:
+        text: General work area for prototyping
+        image: workarea.jpg
+        connections:
+            -
+                horizontal: 140
+                linksTo: lasercutter
+            -
+                horizontal: 60
+                linksTo: kitchen
+            -
+                horizontal: 90
+                linksTo: teamsarea
+    teamsarea:
+        text: Regular working area for the teams
+        image: teamsarea.jpg
+        connections:
+            -
+                horizontal: 25
+                linksTo: kitchen
+# -- End of panorama section --
+---
+
+
+<div class='full parallax' style='background-image: url(images/@header/About_1.1.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='twelve columns'>
+      {% include section-header.html title="About us" color="#fff" tagline="What we are all about" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+<!-- Slogan -->
+<div class="full parallax" style="text-align: center;background-image: url(images/slogan.jpg); color: #fff;">
+    <div class="spacing"></div>
+    <div class="row">
+        <div class="large-12">
+            <p class="slogan">Our goal is to unleash the creative potential of our students by educating them to be inventive future-makers and prepare them for the responsibilities and unforeseeable challenges of their professional lives.
+                </p>
+        </div>
+    </div>
+    <div class="three spacing"></div>
+</div>
+<div class='full'>
+  <div class='row'>
+    <div class='medium-12 columns'>
+
+        <h2>What we do</h2>
+        <p>At inno.space we support various educational concepts that foster complex problem-solving, passion-based learning and learning by doing.<br/>Students undergo an intensive and iterative process in international and multi-disciplinary teams to create and develop new product or service ideas to solve a given challenge. The challenges proposed come from large corporate organizations and small and medium enterprises and address real-world problems.<br/><br/>
+          Together, we build the future!</p>
+        </p>
+      </div>
+      
+   <div class='two spacing'></div>
+  </div>
+  <br>
+  <div class='row'>
+    <div class='medium-12 columns'>
+      <h3>How did we get here?</h3>
+      <a href="{{site.baseurl}}/images/timeline_updated.png" class="gray lightbox-image" title="Timeline"><img class="fadeinleft" alt="" src="{{site.baseurl}}/images/timeline_updated.png" /></a>
+
+          <div class='two spacing'></div>
+
+      </div>
+
+  </div>
+</div>
+
+
+<div class='full' style="background: #f5f5f5;">
+    <div class='row'>
+    <div class='medium-12 columns'>
+      <h2>Our Values</h2>
+      <br><br>
+        </div>
+    </div>
+  <div class='row'>
+    <div class='medium-6 columns'>
+      {% for value in page.value_left %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple' style="min-height:140px">
+            <i class='{{value.icon}}'></i>
+            <h3>{{value.title}}</h3>
+            <p>{{value.desc}}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class='medium-6 columns'>
+      {% for value in page.value_right %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple' style="min-height:140px">
+            <i class='{{value.icon}}'></i>
+            <h3>{{value.title}}</h3>
+            <p>{{value.desc}}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='five spacing'></div>
+</div>
+
+<div class='full'>
+    <div class='row'>
+        <div class='medium-12 columns'>
+            <h2>Our Process</h2>
+            <!-- <h3>How do we do it?</h3> -->
+        </div>
+    </div>
+    <br>
+    <div class='row'>
+        <div class='medium-6 columns'>
+          <a href="{{site.baseurl}}/images/process.jpg" class="gray lightbox-image" title="Process"><img class="fadeinleft" alt="" src="{{site.baseurl}}/images/process.jpg" /></a>
+
+            <div class='four spacing'></div>
+        </div>
+        <div class='medium-6 columns'>
+          <br>
+            <p>With the increasing technical possibilities and the growing competition of globally operating companies, the importance of innovation also grows in order to stay in the game. Design Thinking is a promising approach to be in the front line of innovation. This method can be applied to design products, services and processes. It is based on collaborative creativity in multidisciplinary teams and has its core in the user and continuous iteration. This means that process is driven by the people, real humans with pains and needs.<br/><br/>
+              Teams go through several stages of the process: user and market reasearch, ideation, prototyping and testing and have the freedom to adapt these phases to better suit their challenge. By building and learning from people's needs as well as testing with real users, the concepts represent a holistic integration of the three main pillars for sustainable innovation, desirability, viability and feasability.</p>
+            <div class='three spacing'></div>
+        </div>
+        <div class='two spacing'></div>
+
+
+    </div>
+</div>
+
+
+<div class='full' style="background: #f5f5f5;">
+    <div class="row">
+        <div class='medium-12 columns'>
+            <h2>Our Teaching Team</h2>
+        </div>
+    </div>
+    <br>
+    <div class='row'>
+
+        {% for member in site.data.members %}
+        <div class='small-6 end medium-3 large-3 columns'>
+            <div class='mod modTeamMember'>
+                <div class='member'>
+                    <img class="avatar" alt="" src="{{ member.avatar }}" />
+                    <div class='overlay'>
+                        <div class='intro'>
+                            <h3>{{member.name}}</h3>
+                            <p>{{member.position}}</p>
+                            <ul class='socials'>
+                                {% for social in member.socials %}
+                                <li>
+                                    <a href='{{social.link}}'>
+                        <i class='{{social.icon}}'></i>
+                      </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='four spacing'></div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class='full'>
+    <div class='row'>
+        <div class='medium-12 columns'>
+             <h2>Our Space</h2>
+        </div>
+    </div>
+    <div class='row'>
+      {% include panorama.html rooms=rooms%}
+    </div>
+    <div class='row'>
+        <div class='medium-6 columns'>
+
+            <h3>Equipment</h3>
+            <p>Appliances</p>
+            <ul style="padding-left: 30px">
+                <li>Laser Cutter Epilog Helix 60W</li>
+                <li>3D-Printer Ultimaker 2 extended+</li>
+
+            </ul>
+            <p>Prototyping</p>
+            <ul style="padding-left: 30px">
+                <li>Crafting materials and art supplies</li>
+              <!--  <li>Different kinds of material like wood or acrylic plates</li> -->
+                <li>Tools such as drill, hammers, screwdrivers</li>
+                <li>Electronic parts</li>
+                <li>Soldering iron</li>
+
+            </ul>
+          <!--  <p>Furniture</p>
+            <ul style="padding-left: 30px">
+                <li>Prototyping Wagen</li>
+                <li>Workbench</li>
+
+            </ul>
+            <p>Kitchen</p>
+            <ul style="padding-left: 30px">
+                <li>Fridge</li>
+                <li>Microwave</li>
+            </ul> -->
+
+
+            <div class='two spacing'></div>
+        </div>
+
+        <div class='medium-6 columns'>
+                 {% include image-gallery.html folder="/images/@room" %}
+
+        </div>
+    </div>
+
+    <div class='spacing'></div>
+</div>
