@@ -1,0 +1,6 @@
+Created using Just the Docs and Jekyll.
+
+https://pmarsceill.github.io/just-the-docs/#getting-started
+
+bundle install
+bundle exec jekyll serve
